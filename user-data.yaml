@@ -1,0 +1,13 @@
+#cloud-config
+users:
+  - name: ubuntu
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    groups: sudo
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - AAAAB3NzaC1yc2EAAAADAQABAAACAQDdieXsksAf1a7FOakKPYH7n6L5bDptfekyADZ758EQGkll5P8wkDvmVILYkGhpvvjQhB3JlmJoQTbehgyqp7d9jNUa5jXd/BJhz5ec8s5MX0e6UHTutn5nN8SP7qpPwTHPaLzPWho2BxiI/5JSQFplcF2BY3xJ07wn33wIcF7PsjK9U5ybt6cupqkQ8wgdoE5s4QDf6+Aell2vZVo90ZFXBOCj+QN2k0N4GME9PKFhI/I8ltR0oxIwLDAe/lUikHNa+hrmbrqdjiZ4C6ke7E5qAqgSgDewt+QMTunfO8xM9Ye8C+ou74ytYcGeFIZNA9JH2+5jGbAgv/cZyLHfAXnSszmaBUBQYqtbenNTNO9vUT1wRCmCbME/h5gDU5Yp0aTHblYt829/Qpi7hn0K0LY8UWUN49znAi3InpeXGsO/1iRvp6D6tV6PtM9JVj5RYU8wzXGSK+cyj2w38g3hC1yiuQjNOKgyc/xC8I4q4bklxdI+hN5qqtU0Eth61IfgsBJUaJuIucbNi8E9Ydq5dOtxnP5h9nc32SYH2v6AqbEdEYsrtaU/eyt/55atrTlF9mJh13e2PAdeds4kyPM+i/CBUDPuCk3yCx5etN1pcTF2njD3PnMxYTpKKaco1sH4EtNj7CgcANFThFYx0ds9nmthbbhIOJ2mb0JiWYsyS7gETw== hajarmira2@gmail.com
+password: ubuntu
+chpasswd:
+  expire: false
+ssh_pwauth: true
+
